@@ -17,7 +17,7 @@ hace que seleccionemos una única opción entre varias alternativas.**[1]**
 
 Una bifurcación Fork, es una serie de "opciones" que nos permite dividir
 el flujo en varios procesos paralelos **[1]**
-Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo**[2]**
+Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo **[2]**
 
 **CONCLUSIÓN**
 
@@ -42,10 +42,11 @@ __________________________________________________________________________
 ## FASE 2: INVESTIGACION TÉCNICA
 
 ### IMAGEN DIAGRAMA:
+
 ![IMAGEN](img/Diagrama.drawio.png)
 
 ### EXPLICACIONES DE NUESTRO DIAGRAMA:
-
+__________________________________________________________________________
 
 Hemos comenzado el modelado insertando el punto de incio junto
 al elemento "Finalizar compra".
