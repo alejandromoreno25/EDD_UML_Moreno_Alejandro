@@ -43,7 +43,7 @@ __________________________________________________________________________
 
 ### IMAGEN DIAGRAMA:
 
-![IMAGEN](img/Diagrama.drawio.png)
+![IMAGEN](img/Diagrama.drawio1.png)
 
 ### EXPLICACIONES DE NUESTRO DIAGRAMA:
 __________________________________________________________________________
