@@ -17,7 +17,7 @@ hace que seleccionemos una única opción entre varias alternativas.**[1]**
 
 Una bifurcación Fork, es una serie de "opciones" que nos permite dividir
 el flujo en varios procesos paralelos **[1]**
-Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo**[2]**
+Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo **[2]**
 
 **CONCLUSIÓN**
 
@@ -42,6 +42,24 @@ __________________________________________________________________________
 ## FASE 2: INVESTIGACION TÉCNICA
 
 ### IMAGEN DIAGRAMA:
+
+![IMAGEN](img/Diagrama.drawio.png)
+
+### EXPLICACIONES DE NUESTRO DIAGRAMA:
+__________________________________________________________________________
+
+
+Hemos comenzado el modelado insertando el punto de inicio junto al elemento "Finalizar compra".
+
+Tras eso, para realizar las validaciones de stock y de sesión de usuario, hemos utilizado un Fork, ya que queremos que estas dos acciones se ejecuten en paralelo y se validen simultáneamente.
+
+Si ambas son correctas, hemos empleado un Join que sincroniza dichas validaciones, seguido de un nodo de decisión (rombo) para evaluar el resultado. Hemos tomado la decisión de que, si las validaciones no son correctas, el flujo finalice directamente en un nodo final, ya que no consideramos coherente que el proceso regrese al principio o a otro elemento previo.
+
+Para continuar con el diagrama, hemos usado un conector para desplazar el flujo hacia abajo. Al igual que en el paso anterior, hemos incluido un Fork que se activa si el pago es exitoso. En caso de fallo, se ejecuta el elemento "Error de pago" y el flujo regresa al punto inmediatamente anterior al procesamiento del pago (a diferencia de lo que ocurre con el "Error de validación", donde el proceso termina).
+
+Finalmente, tras un Join que espera la ejecución de los tres hilos paralelos del Fork, se muestra el mensaje de confirmación y se llega al punto final.
+
+__________________________________________________________________________
 
 *La Fase 3 es la Entrega.*
     
