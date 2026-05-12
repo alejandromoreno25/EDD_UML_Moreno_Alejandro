@@ -9,15 +9,15 @@ En la versión UML 2.5 las decisones se realizan con un rombo y las bifurcacione
 **¿QUE ES UNA DECISIÓN (ROMBO)**
 
 Una decisión con forma de rombo son decisiones ya tomadas por alguien o 
-por alguna situación automática. [2]
+por alguna situación automática.**[2]**
 Estas decisiones, nos sirven para dividir el flujo ya que su uso 
-hace que seleccionemos una única opción entre varias alternativas.[1]
+hace que seleccionemos una única opción entre varias alternativas.**[1]**
 
 **¿QUE ES UNA BIFURCACIÓN(FORK)?**
 
 Una bifurcación Fork, es una serie de "opciones" que nos permite dividir
-el flujo en varios procesos paralelos [1]
-Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo[2]
+el flujo en varios procesos paralelos **[1]**
+Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo**[2]**
 
 **CONCLUSIÓN**
 
