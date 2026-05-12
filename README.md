@@ -42,6 +42,23 @@ __________________________________________________________________________
 ## FASE 2: INVESTIGACION TÉCNICA
 
 ### IMAGEN DIAGRAMA:
+![IMAGEN](img/Diagrama.drawio.png)
+
+### EXPLICACIONES DE NUESTRO DIAGRAMA:
+
+Hemos comenzado el modelado insertando el punto de incio junto 
+al elemento "Finalizar compra". 
+
+Tras eso, para realizar las validaciones de si hay stock y si se encuentra la sesión hemos usado un FORK. ya que queremos que se hagan esas dos opciones en paralelo y se validen las dos a la vez.
+
+Si ambas son correctas, hemos usado un JOIN que espera esas validaciones junto a una Decisión de rombo si esas validaciones son correctas o no.
+
+Hemos tomado la decisión de que si esas validaciones no son correctas finalice nuestro diagrama directamente. Ya que no nos parecía muy coherente que volviese al principio o a algún otro elemento.
+
+Para continuar con nuestro diagrama hemos usado un rombo pequeño para continuar abajo, y al igual que en el anterior, hemos usado un fork que se ejecuta si el pago es exitoso. Y si no lo es, realiza el elemnto "Error de pago" y vuelve justo antes de procesar el pago a diferencia de la anterior em "Error validación".
+
+Al final, tras hacer un Join que espera a que se ejecuten los 3 fork paralelos muestra el mensaje de confirmación y finaliza.
+
 
 *La Fase 3 es la Entrega.*
     
