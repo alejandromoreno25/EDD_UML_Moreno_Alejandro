@@ -19,6 +19,13 @@ Una bifurcación Fork, es una serie de "opciones" que nos permite dividir
 el flujo en varios procesos paralelos [1]
 Esto quiere decir que se ejecutan varios caminos de forma simultánea y que es utilizado para presentar cualquier concurrencia o paralelismo[2]
 
+**Conclusión**
+
+A modo de conclusión, las bifurcaciones y las decisiones se usan en momentos muy distintos los cuales, hay que saber diferenciar.
+Si nosotros, queremos elegir un único camino para continuar nuestro flujo debemos usar una **Decisión (Rombo)**. 
+
+En cambio, si queremos que se ejecuten varias alternativas a la vez y nosotros elegir una de ellas usaremos una **Bifurcación (Fork)**.
+
 
 ##  BIBLIOGRAFIA
 
