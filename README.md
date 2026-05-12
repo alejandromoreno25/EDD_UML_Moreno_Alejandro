@@ -1,2 +1,1 @@
-# EDD_UML_Moreno_Alejandro
-Actividad con Pablo García
+# TAREAS DE ENTORNO DE DESARROLLO DIAGRAMAS DE ACTIVIDAD
