@@ -41,7 +41,7 @@ __________________________________________________________________________
 
 ## FASE 2: INVESTIGACION TÉCNICA
 
-###IMAGEN DIAGRAMA:
-    
+### IMAGEN DIAGRAMA:
+
 *La Fase 3 es la Entrega.*
     
