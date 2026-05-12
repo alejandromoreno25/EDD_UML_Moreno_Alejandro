@@ -39,5 +39,9 @@ En cambio, si queremos que se ejecuten varias alternativas a la vez y nosotros e
 __________________________________________________________________________
 
 
-*La Fase 2 y la Fase 3 son el diagrama y la Entrega.*
+## FASE 2: INVESTIGACION TÉCNICA
+
+###IMAGEN DIAGRAMA:
+    
+*La Fase 3 es la Entrega.*
     
