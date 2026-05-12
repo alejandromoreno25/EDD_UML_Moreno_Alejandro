@@ -48,23 +48,16 @@ __________________________________________________________________________
 ### EXPLICACIONES DE NUESTRO DIAGRAMA:
 __________________________________________________________________________
 
-Hemos comenzado el modelado insertando el punto de incio junto
-al elemento "Finalizar compra".
 
+Hemos comenzado el modelado insertando el punto de inicio junto al elemento "Finalizar compra".
 
-Tras eso, para realizar las validaciones de si hay stock y si se encuentra la sesión hemos usado un FORK. ya que queremos que se hagan esas dos opciones en paralelo y se validen las dos a la vez.
+Tras eso, para realizar las validaciones de stock y de sesión de usuario, hemos utilizado un Fork, ya que queremos que estas dos acciones se ejecuten en paralelo y se validen simultáneamente.
 
+Si ambas son correctas, hemos empleado un Join que sincroniza dichas validaciones, seguido de un nodo de decisión (rombo) para evaluar el resultado. Hemos tomado la decisión de que, si las validaciones no son correctas, el flujo finalice directamente en un nodo final, ya que no consideramos coherente que el proceso regrese al principio o a otro elemento previo.
 
-Si ambas son correctas, hemos usado un JOIN que espera esas validaciones junto a una Decisión de rombo si esas validaciones son correctas o no.
+Para continuar con el diagrama, hemos usado un conector para desplazar el flujo hacia abajo. Al igual que en el paso anterior, hemos incluido un Fork que se activa si el pago es exitoso. En caso de fallo, se ejecuta el elemento "Error de pago" y el flujo regresa al punto inmediatamente anterior al procesamiento del pago (a diferencia de lo que ocurre con el "Error de validación", donde el proceso termina).
 
-
-Hemos tomado la decisión de que si esas validaciones no son correctas finalice nuestro diagrama directamente. Ya que no nos parecía muy coherente que volviese al principio o a algún otro elemento.
-
-
-Para continuar con nuestro diagrama hemos usado un rombo pequeño para continuar abajo, y al igual que en el anterior, hemos usado un fork que se ejecuta si el pago es exitoso. Y si no lo es, realiza el elemnto "Error de pago" y vuelve justo antes de procesar el pago a diferencia de la anterior em "Error validación".
-
-
-Al final, tras hacer un Join que espera a que se ejecuten los 3 fork paralelos muestra el mensaje de confirmación y finaliza.
+Finalmente, tras un Join que espera la ejecución de los tres hilos paralelos del Fork, se muestra el mensaje de confirmación y se llega al punto final.
 
 __________________________________________________________________________
 
